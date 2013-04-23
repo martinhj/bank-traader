@@ -4,6 +4,9 @@ class Withdraw extends Thread {
 		account = a;
 	}
 	public void run() {
-		account.withdraw();
+		System.out.println("Tar ut 50");
+		System.out.println("Saldo er: " + account.getBalance());
+		for (int i = 0; i < 20; i++)
+			account.withdraw();
 	}
 }

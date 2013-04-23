@@ -1,13 +1,13 @@
 class Account {
 	static final int AMOUNT = 50;
 	long balance;
-	void insert() {
+	synchronized void insert() {
 		balance += AMOUNT;
 	}
-	void withdraw() {
+	synchronized void withdraw() {
 		balance -= AMOUNT;
 	}
-	long getBalance() {
+	synchronized long getBalance() {
 		return balance;
 	}
 }
