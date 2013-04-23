@@ -1,4 +1,4 @@
-class Insert extend Thread {
+class Insert extends Thread {
 	private Account account;
 
 	Insert(Account a) {
