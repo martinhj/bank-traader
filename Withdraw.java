@@ -3,4 +3,7 @@ class Withdraw extends Thread {
 	Withdraw(Account a) {
 		account = a;
 	}
+	public void run() {
+		account.withdraw();
+	}
 }

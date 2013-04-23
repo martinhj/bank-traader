@@ -3,7 +3,8 @@ class Insert extends Thread {
 
 	Insert(Account a) {
 		account = a;
-
 	}
-	
+	public void run() {
+		account.insert();
+	}
 }
