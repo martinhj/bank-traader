@@ -3,7 +3,7 @@ class Insert extend Thread {
 
 	Insert(Account a) {
 		account = a;
-		System.out.println("Test");
+
 	}
 	
 }
